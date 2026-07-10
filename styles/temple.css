@@ -1,0 +1,142 @@
+/* ==========================
+   VARIABLES
+========================== */
+
+:root{
+    --primary-color:#1F1032;
+    --primary-light:#4A2D73;
+
+    --background-color:#ECECEC;
+    --surface-color:#FFFFFF;
+
+    --text-color:#2E2E2E;
+
+    --border-color:#B9BDC5;
+
+    --footer-color:#1F1F1F;
+
+    --font-main:"Montserrat", sans-serif;
+}
+
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   GLOBAL
+========================== */
+
+body{
+    font-family:var(--font-main);
+    background-color:var(--background-color);
+    color:var(--text-color);
+}
+
+/* ==========================
+   GENERAL
+========================== */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navigation{
+    display:none;
+    list-style:none;
+    gap:2rem;
+}
+
+.navigation li{
+    
+}
+
+#menu::before{
+    content:"☰";
+}
+
+#menu.open::before{
+    content:"✖";
+}
+
+.navigation.open{
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display:block;
+    color: var(--surface-color);
+    text-decoration: none;
+    padding: .8rem 1rem;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+nav a:hover {
+    background: var(--primary-light);
+    color: var(--surface-color);
+    border-radius: 6px;
+}
+
+nav button{
+    background-color: transparent;
+    border: none;
+    color: var(--surface-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu{
+    
+}
+
+header{
+    background: var(--primary-color);
+    color:var(--surface-color);
+    padding:1rem;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+main { 
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+figure {
+    text-align: center;
+    border:1px solid var(--border-color);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1rem;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--surface-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

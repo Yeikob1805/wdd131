@@ -33,6 +33,7 @@ nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    text-size-adjust: ;
 }
 
 nav a {
