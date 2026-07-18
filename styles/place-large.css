@@ -1,0 +1,44 @@
+@media screen and (min-width:768px){
+
+main{
+    position:relative;
+    max-width:1400px;
+    margin:auto;
+    padding:0;
+}
+
+.hero{
+    grid-column:1;
+    grid-row:1;
+}
+
+.hero img{
+    width:100%;
+    height:auto;
+}
+
+.data,
+.weather{
+    position:absolute;
+    width:260px;
+}
+
+.data{
+    top:40px;
+    left:40px;
+}
+
+.weather{
+    bottom:40px;
+    right:40px;
+}
+
+.weather h2::after{
+    content:" ⛅";
+}
+
+.weather-icon{
+    display:none;
+}
+
+}
