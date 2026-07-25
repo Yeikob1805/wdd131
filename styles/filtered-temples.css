@@ -38,7 +38,7 @@ nav{
     padding:1rem 2rem;
 }
 
-nav h1{
+nav h2{
     color:var(--surface-color);
 }
 
@@ -100,7 +100,7 @@ main{
 h1{
     text-align:center;
     margin-bottom:2rem;
-    color: var(--surface-color);
+    color: var(--text-color);
 }
 
 .album{
@@ -134,6 +134,7 @@ figure img{
 figure h2{
     margin-bottom:.8rem;
     font-size:1.8rem;
+    color: var(--surface-color);
 }
 
 figure p{
