@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Taskly helps you organize your daily tasks, notes, and goals in one simple place.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Taskly | Home</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Taskly</h1>
+
+    <button id="menu" aria-label="Open navigation"></button>
+
+    <nav class="navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <img src="images/hero.jpg" alt="Person organizing daily tasks" loading="eager" width="800" height="500">
+
+    <div class="hero-text">
+        <h2>Stay Organized Every Day</h2>
+
+        <p>Taskly helps you manage your tasks, organize your notes, and stay focused on what matters most.</p>
+
+        <a href="tasks.html" class="button">Start Planning</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Features</h2>
+
+    <article class="feature-card">
+        <h3>Create Tasks</h3>
+        <p>Add new tasks and organize them by category and priority.</p>
+    </article>
+
+    <article class="feature-card">
+        <h3>Track Progress</h3>
+        <p>Keep track of completed tasks and monitor your productivity.</p>
+    </article>
+
+    <article class="feature-card">
+        <h3>Save Automatically</h3>
+        <p>Your information is stored in your browser using localStorage.</p>
+    </article>
+</section>
+
+<section class="benefits">
+    <div class="benefits-text">
+        <h2>Why Choose Taskly?</h2>
+        <p>Taskly is designed to help students and professionals stay organized without unnecessary distractions. Its simple interface lets you focus on completing your goals while keeping all your tasks in one place.</p>
+    </div>
+
+    <img src="images/productivity.jpg" alt="Organized workspace" loading="lazy" width="700" height="450">
+</section>
+
+<section class="preview">
+    <h2>What You Can Do</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Create</h3>
+            <p>Add tasks quickly.</p>
+        </div>
+
+        <div class="card">
+            <h3>Manage</h3>
+            <p>Edit or delete your tasks anytime.</p>
+        </div>
+
+        <div class="card">
+            <h3>Complete</h3>
+            <p>Mark finished tasks and track your progress.</p>
+        </div>
+
+        <div class="card">
+            <h3>Remember</h3>
+            <p>Your tasks stay saved even after closing the browser.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="cta-text">
+        <h2>Ready to Get Organized?</h2>
+        <p>Start using Taskly today and keep all your tasks in one place.</p>
+    </div>
+    <a href="tasks.html" class="button">Go to My Tasks</a>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> | Yeikob Valverde | Peru</p>
+    <p id="lastModified"></p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>

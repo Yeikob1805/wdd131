@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your tasks, organize your priorities, and track your progress with Taskly.">
+    <meta name="author" content="Yeikob Valverde">
+    <title>Tasks | Taskly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <script src="scripts/tasks.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Taskly</h1>
+        <button id="menu" aria-label="Open navigation menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="tasks.html" class="active">Tasks</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-intro">
+            <h2>My Tasks</h2>
+            <p>Manage your daily activities, stay organized, and keep track of your progress.</p>
+        </section>
+
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <article class="stat-card">
+                    <span>Total Tasks</span>
+                    <strong id="totalTasks">0</strong>
+                </article>
+                <article class="stat-card">
+                    <span>Pending</span>
+                    <strong id="pendingTasks">0</strong>
+                </article>
+                <article class="stat-card completed-stat">
+                    <span>Completed</span>
+                    <strong id="completedTasks">0</strong>
+                </article>
+                <article class="stat-card progress-stat">
+                    <span>Progress</span>
+                    <strong id="progress">0%</strong>
+                    <div class="progress-bar">
+                        <div id="progressFill"></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="task-form-section">
+            <div class="section-heading">
+                <h2>Add New Task</h2>
+                <p>Create a task and organize it by priority.</p>
+            </div>
+
+            <form id="taskForm">
+                <div class="form-group task-name">
+                    <label for="taskName">Task</label>
+                    <input type="text" id="taskName" name="taskName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select one</option>
+                        <option value="School">School</option>
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">Select one</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate" name="dueDate" required>
+                </div>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <section class="manage-section">
+            <div class="section-heading">
+                <h2>Manage Tasks</h2>
+                <p>Search and filter your tasks to quickly find what you need.</p>
+            </div>
+
+            <div class="controls">
+                <div class="control-group search-control">
+                    <label for="search">Search</label>
+                    <input type="search" id="search" placeholder="Search tasks...">
+                </div>
+
+                <div class="control-group">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="School">School</option>
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label for="statusFilter">Status</label>
+                    <select id="statusFilter">
+                        <option value="all">All Tasks</option>
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="tasks-section">
+            <div class="section-heading">
+                <h2>My Tasks</h2>
+                <p id="taskCount">0 tasks</p>
+            </div>
+
+            <div id="emptyState" class="empty-state">
+                <div class="empty-icon">✓</div>
+                <h3>No tasks yet</h3>
+                <p>Create your first task and start organizing your day.</p>
+                <button type="button" id="emptyStateButton">Add Your First Task</button>
+            </div>
+
+            <div id="tasksContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© | Yeikob Valverde | Peru</p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+</html>

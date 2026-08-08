@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Taskly and how it helps you stay organized.">
+    <meta name="author" content="Yeikob Valverde">
+
+    <title>Taskly | About</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Taskly</h1>
+
+    <button id="menu" aria-label="Open navigation"></button>
+
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="tasks.html">Tasks</a>
+        <a href="about.html" class="active">About</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="about-hero">
+    <div class="about-text">
+        <h2>About Taskly</h2>
+        <p>Taskly is a simple productivity website designed to help people organize their daily activities, stay focused, and build better habits through task management.</p>
+    </div>
+
+    <img src="images/about.jpg" alt="Person organizing daily work" loading="lazy" width="700" height="450">
+</section>
+
+<section class="mission">
+
+    <article class="info-card">
+        <h2>Our Mission</h2>
+        <p>Our goal is to provide an easy-to-use tool that helps users stay organized without unnecessary complexity. Taskly focuses on simplicity, productivity, and accessibility for everyone.</p>
+    </article>
+
+    <article class="info-card">
+        <h2>Who Can Use Taskly?</h2>
+        <p>Taskly is perfect for students, professionals, freelancers, or anyone who wants to manage daily responsibilities more efficiently.</p>
+    </article>
+
+</section>
+
+<section class="how-it-works">
+
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+        <article class="step-card">
+            <h3>1. Create</h3>
+            <p>Add your tasks with a category, priority, and due date.</p>
+        </article>
+
+        <article class="step-card">
+            <h3>2. Organize</h3>
+            <p>Use filters and search to quickly find what you need.</p>
+        </article>
+
+        <article class="step-card">
+            <h3>3. Complete</h3>
+            <p>Mark tasks as completed and monitor your progress through the dashboard.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="features-list">
+
+    <h2>Main Features</h2>
+
+    <div class="feature-list-card">
+        <ul>
+            <li>Create, edit, and delete tasks.</li>
+            <li>Search tasks instantly.</li>
+            <li>Filter by category or status.</li>
+            <li>Track your progress with live statistics.</li>
+            <li>Automatically save your information using localStorage.</li>
+        </ul>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> | Yeikob Valverde | Peru</p>
+    <p id="lastModified"></p>
+    <a href="references.html">References</a>
+</footer>
+
+</body>
+</html>
